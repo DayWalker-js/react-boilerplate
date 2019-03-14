@@ -1,0 +1,11 @@
+.products-container-content {
+  @include flex(flex, row, wrap, center, flex-start, flex-start);
+  margin-right: -80px;
+  &__item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: stretch;
+    width: 320px;
+    margin: 25px 80px 25px 0px;
+  }
+}

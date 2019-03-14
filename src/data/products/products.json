@@ -1,0 +1,52 @@
+[
+    {
+
+        "age": 0,
+        "id": "product-one",
+        "imageUrl": "src/images/products/cat-food.png",
+        "title": "Сказочное заморское яство",
+        "name": "Нямушка",
+        "nameDescription": "с фуа-гра",
+        "qntPortions": "1",
+        "qntPresent": "",
+        "descriptionPresent": "в подарок",
+        "sentiment": "",
+        "available": "100",
+        "weight": "0,5",
+        "weightUnit": "кг"
+    },
+    {
+
+        "age": 1,
+        "id": "product-two",
+        "imageUrl": "src/images/products/cat-food.png",
+        "title": "Сказочное заморское яство",
+        "name": "Нямушка",
+        "nameDescription": "с рыбой",
+        "qntPortions": "2",
+        "qntPresent": "2",
+        "descriptionPresent": "в подарок",
+        "sentiment": "",
+        "available": "1",
+        "weight": "2",
+        "weightUnit": "кг"
+
+    },
+    {
+
+        "age": 2,
+        "id": "product-three",
+        "imageUrl": "src/images/products/cat-food.png",
+        "title": "Сказочное заморское яство",
+        "name": "Нямушка",
+        "nameDescription": "с курой",
+        "qntPortions": "100",
+        "qntPresent": "5",
+        "descriptionPresent": "в подарок",
+        "sentiment": "заказчик доволен",
+        "available": "0",
+        "weight": "5",
+        "weightUnit": "кг"
+
+    }
+]
