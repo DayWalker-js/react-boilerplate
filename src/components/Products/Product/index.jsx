@@ -56,23 +56,30 @@ export default  class Product extends PureComponent{
     render() {
         const {product} = this.props;
         return (
-            <div className={this.getClassNames}
-                 onClick={this.clickHandler}
-                 onMouseLeave={this.mouseLeaveHandler}
-            >
-                <div className="product-item-title">
-                    <p>{product.title}</p>
+            <>
+                <div className={this.getClassNames}
+                     onClick={this.clickHandler}
+                     onMouseLeave={this.mouseLeaveHandler}
+                >
+                    <div className="product-item-title">
+                        <p>{product.title}</p>
+                    </div>
+                    <div className="product-item__description">
+                        <h4>{product.name}</h4>
+                        <h5>{product.nameDescription}</h5>
+                        <p><strong>{product.qntPortions}</strong> {this.getPortionsString(product.qntPortions)}</p>
+                        <p><strong>{product.qntPresent}</strong> {this.getPresentString(product.qntPresent)} {product.descriptionPresent}</p>
+                        <p>{product.sentiment && product.sentiment}</p>
+                        <p className="product-item__weight"><span>{product.weight}</span> {product.weightUnit}</p>
+                        <div className="product-item__image"><img src={product.imageUrl}/></div>
+                    </div>
                 </div>
-                <div className="product-item__description">
-                    <h4>{product.name}</h4>
-                    <h5>{product.nameDescription}</h5>
-                    <p><strong>{product.qntPortions}</strong> {this.getPortionsString(product.qntPortions)}</p>
-                    <p><strong>{product.qntPresent}</strong> {this.getPresentString(product.qntPresent)} {product.descriptionPresent}</p>
-                    <p>{product.sentiment && product.sentiment}</p>
-                    <p className="product-item__weight"><span>{product.weight}</span> {product.weightUnit}</p>
-                    <div className="product-item__image"><img src={product.imageUrl}/></div>
-                </div>
-            </div>
+
+                <p className="product-item__action">
+                    {product.action} {<button className="button" onClick={this.clickHandler}>{product.button && product.button}</button>}
+                </p>
+            </>
+
         )
     }
 

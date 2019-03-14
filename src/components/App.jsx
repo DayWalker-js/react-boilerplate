@@ -11,16 +11,12 @@ export default class App extends PureComponent {
         return (
 
             <div className="products-container">
-                <div className="products-container__center">
-                    <div className="center">
+                <div className="center">
                         <div className="title-container">
                            Ты сегодня покормил кота?
                         </div>
                     <Productslist products = {products}/>
-
-                    </div>
                 </div>
-
             </div>
         )
     }

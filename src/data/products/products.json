@@ -13,7 +13,9 @@
         "sentiment": "",
         "available": "100",
         "weight": "0,5",
-        "weightUnit": "кг"
+        "weightUnit": "кг",
+        "action": "Чего сидишь? Порадуй котэ, ",
+        "button": "купи"
     },
     {
 
@@ -29,7 +31,9 @@
         "sentiment": "",
         "available": "1",
         "weight": "2",
-        "weightUnit": "кг"
+        "weightUnit": "кг",
+        "action": "Головы щучьи с чесноком да свежайшая сёмгушка. ",
+        "button": ""
 
     },
     {
@@ -46,7 +50,9 @@
         "sentiment": "заказчик доволен",
         "available": "0",
         "weight": "5",
-        "weightUnit": "кг"
+        "weightUnit": "кг",
+        "action": "Печалька, с курой закончился.",
+        "button": ""
 
     }
 ]

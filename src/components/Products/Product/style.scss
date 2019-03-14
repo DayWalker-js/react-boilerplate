@@ -114,6 +114,13 @@
     }
   }
 
+  &__action {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    margin-top: 13px;
+  }
+
 
   &_available {
     &:hover {
@@ -131,7 +138,15 @@
       .product-item__weight {
         background: #2ea8e6;
       }
+
+      &+p {
+        .button {
+          color: #2ea8e6;
+        }
+      }
     }
+
+
 
   }
 
@@ -159,6 +174,10 @@
     .product-item__weight {
       background:  #b3b3b3;
     }
+
+    &+p {
+      color: #ffff66;
+    }
   }
 
   &_selected {
@@ -177,6 +196,12 @@
       background:  #d91667;
     }
 
+    &+p {
+      .button {
+        color: #d91667;
+      }
+    }
+
     &-hover {
       &:hover {
         * {
@@ -192,6 +217,12 @@
 
         .product-item__weight {
           background:  #e62e7a;
+        }
+
+        &+p {
+          .button {
+            color: #e62e7a;
+          }
         }
       }
     }
